@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <h1>Форма заполнения</h1>
+    <form class="form" id="form">
+      <div class="mb-3">
+        <label class="form-label">Имя</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Фамилия</label>
+        <input type="text" class="form-control" id="surname">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Отчество</label>
+        <input type="text" class="form-control" id="fath">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Дата рождения</label>
+        <input type="date" min="1900-01-01" max="2007-12-31" class="form-control" id="dateOfBirth" valueAsDate="true">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Год начала обучения</label>
+        <input type="number" min="2000" max="2023" class="form-control" id="studyYear">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Факультет</label>
+        <input type="text" class="form-control" id="fac">
+      </div>
+      <button type="submit" class="btn btn-primary">Добавить студента</button>
+    </form>
+    <h1>Таблица</h1>
+    <form class="form2" id="form2">
+      <div class="mb-3">
+        <label class="form-label">Ф.И.О.</label>
+        <input type="text" class="form-control" id="filfio">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Факультет</label>
+        <input type="text" class="form-control" id="filfac">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Дата рождения</label>
+        <input type="date"  min="1900-01-01" class="form-control" id="fildate">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Годы обучения</label>
+        <input type="number" min="2000" max="2023" class="form-control" id="filyear">
+      </div>
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" id="sortfio">Ф.И.О. студента</th>
+          <th scope="col" id="sortfac">Факультет</th>
+          <th scope="col" id="sortdate">Дата рождения</th>
+          <th scope="col" id="sortyear">Годы обучения</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider" id="tbody">
+
+      </tbody>
+    </table>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
